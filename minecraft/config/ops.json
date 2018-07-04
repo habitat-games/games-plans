@@ -1,0 +1,1 @@
+[{{#each cfg.ops.list as |op| ~}}"{{op}}"{{#unless @last ~}},{{/unless ~}}{{/each ~}}]
