@@ -1,0 +1,12 @@
+#!/bin/sh
+
+exec 2>&1
+
+cd {{pkg.svc_data_path}}
+cp {{pkg.svc_config_path}}/* .
+
+exec java \
+  -Xmx{{cfg.java.Xmx}} \
+  -Xms{{cfg.java.Xms}} \
+  -jar {{pkg.path}}/server.jar \
+  nogui
