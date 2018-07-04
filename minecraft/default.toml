@@ -1,3 +1,6 @@
+eula = true
+
+[properties]
 generator-settings = ""
 op-permission-level = 4
 allow-nether = true
@@ -33,7 +36,9 @@ spawn-monsters = true
 view-distance = 10
 generate-structures = true
 motd = "A Minecraft Server"
-eula = true
+
+[ops]
+list = []
 
 [java]
 Xmx = "1024M"
